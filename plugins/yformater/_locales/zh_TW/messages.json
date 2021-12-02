@@ -1,0 +1,182 @@
+{
+   "common_all_nothing": {
+      "description": "",
+      "message": "nothing..."
+   },
+   "file_app_cjson": {
+      "description": "",
+      "message": "從剪貼板格式化JSON             Alt+V"
+   },
+   "file_app_copy": {
+      "description": "",
+      "message": "複製格式化後的JSON             Alt+C"
+   },
+   "file_app_font": {
+      "description": "",
+      "message": "字號"
+   },
+   "file_app_json": {
+      "description": "",
+      "message": "格式化當前頁面JSON             Alt+X"
+   },
+   "file_app_link": {
+      "description": "",
+      "message": "訪問選中連接"
+   },
+   "file_app_lock": {
+      "description": "",
+      "message": "鎖定"
+   },
+   "file_app_lock_cancel": {
+      "description": "",
+      "message": "解除鎖定"
+   },
+   "file_app_lock_domain": {
+      "description": "",
+      "message": "鎖定當前域(?)"
+   },
+   "file_app_lock_url": {
+      "description": "",
+      "message": "鎖定當前路徑(=)"
+   },
+   "file_app_theme": {
+      "description": "",
+      "message": "主題"
+   },
+   "file_content_collapse_all": {
+      "description": "",
+      "message": "疊起"
+   },
+   "file_content_copy_success": {
+      "description": "",
+      "message": "已復制JSON到剪貼板"
+   },
+   "file_content_expand_all": {
+      "description": "",
+      "message": "展開"
+   },
+   "file_content_expand_level1": {
+      "description": "",
+      "message": "1級"
+   },
+   "file_content_expand_level2": {
+      "description": "",
+      "message": "2級"
+   },
+   "file_content_expand_level3": {
+      "description": "",
+      "message": "3級"
+   },
+   "file_content_expand_level4": {
+      "description": "",
+      "message": "4級"
+   },
+   "file_content_expand_level5": {
+      "description": "",
+      "message": "5級"
+   },
+   "file_content_expand_level6": {
+      "description": "",
+      "message": "6級"
+   },
+   "file_content_expand_next": {
+      "description": "",
+      "message": "下級"
+   },
+   "file_content_expand_prev": {
+      "description": "",
+      "message": "上級"
+   },
+   "file_content_parse_fail": {
+      "description": "",
+      "message": "JSON解析失敗-.-"
+   },
+   "file_content_show_control": {
+      "description": "",
+      "message": "折疊"
+   },
+   "file_content_title_collapse_all": {
+      "description": "",
+      "message": "方向鍵上(↑)"
+   },
+   "file_content_title_expand_all": {
+      "description": "",
+      "message": "方向鍵下(↓)"
+   },
+   "file_content_title_expand_level1": {
+      "description": "",
+      "message": "數字鍵一(1)"
+   },
+   "file_content_title_expand_level2": {
+      "description": "",
+      "message": "數字鍵二(2)"
+   },
+   "file_content_title_expand_level3": {
+      "description": "",
+      "message": "數字鍵三(3)"
+   },
+   "file_content_title_expand_level4": {
+      "description": "",
+      "message": "數字鍵四(4)"
+   },
+   "file_content_title_expand_level5": {
+      "description": "",
+      "message": "數字鍵五(5)"
+   },
+   "file_content_title_expand_level6": {
+      "description": "",
+      "message": "數字鍵六(6)"
+   },
+   "file_content_title_expand_next": {
+      "description": "",
+      "message": "方向鍵右(→)"
+   },
+   "file_content_title_expand_prev": {
+      "description": "",
+      "message": "方向鍵左(←)"
+   },
+   "file_manifest_default_title": {
+      "description": "",
+      "message": "yformater - yformater - 可能是史上最用心的JSON外掛程式，集 ·乾淨·小巧·睿智· 於一身，不信你就試試看！"
+   },
+   "file_manifest_description": {
+      "description": "",
+      "message": "可能是史上最用心的JSON格式化外掛程式，集 ·乾淨·小巧·睿智· 於一身，不信你就試試看！"
+   },
+   "file_options_keyboard_shortcut_des1": {
+      "description": "",
+      "message": "* 如果yformater快捷鍵干擾您正常使用chrome，您可以在這裡自由解除快捷鍵。"
+   },
+   "file_options_keyboard_shortcut_des2": {
+      "description": "",
+      "message": "* 所謂規則，就是用您輸入的正則表達式去配對當前頁面完整路徑(window.location.href)。"
+   },
+   "file_options_keyboard_shortcut_des3": {
+      "description": "",
+      "message": "* 您可以輸入多個規則，每行代表一個規則，任意一個或多個規則配對成功，都會使yformater快捷鍵失效。"
+   },
+   "file_options_keyboard_shortcut_des4": {
+      "description": "",
+      "message": "* 因此，不建議您輸入過多規則，也不建議您輸入過於複雜的規則。"
+   },
+   "file_options_keyboard_shortcut_des5": {
+      "description": "",
+      "message": "* 每次更新規則時，一定要記得保存哦！"
+   },
+   "file_options_keyboard_shortcut_save_btn": {
+      "description": "",
+      "message": "保存"
+   },
+   "file_options_keyboard_shortcut_save_msg": {
+      "description": "",
+      "message": "保存成功！"
+   },
+   "file_options_keyboard_shortcut_title": {
+      "description": "",
+      "message": "「 快捷鍵屏蔽規則列表 」"
+   },
+   "file_options_page_title": {
+      "description": "",
+      "message": "yformater設定"
+   }
+}

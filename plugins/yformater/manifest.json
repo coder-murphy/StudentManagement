@@ -1,0 +1,33 @@
+{
+   "background": {
+      "scripts": [ "js/app.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/icon19.png",
+         "38": "images/icon38.png"
+      },
+      "default_popup": "index.html",
+      "default_title": "__MSG_file_manifest_default_title__"
+   },
+   "content_scripts": [ {
+      "js": [ "lib/yformater.drag.js", "lib/keypress-2.1.4.min.js", "lib/yformater.layer.js", "js/content.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_file_manifest_description__",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1YgNh7ScOM56dZ4hH8TlAXOPs3mB3KUqpx66OVwGIbwEEsHzX14YO6J7iebM3LAjfC6aQCaDRVKFmkqvQRWKTXpywPuEwmAF7eC1c5SwNtBk5GAd9JufjHxFUqehw7a/z8VKO1dg2QCfXjF+AHZ5oisGoqyJjbgPZUHZFw/Qb6POIKU7j8dLuP/z3mrGPvytO09BMpKbkUe7D85uiqlWYUPc6V4QZ4VWkNmMuaMqsjP9T5R5oDtS/DIY/zfaoIHC7D04/Fo8s+Hz9ODqMb0DVzuGu+0uegEQxtRpJRyEKpARq2ftnfF1gY4v1mGNwg0PZOek84tvnVhFM+rbS+gcSQIDAQAB",
+   "manifest_version": 2,
+   "name": "yformater",
+   "options_page": "options.html",
+   "permissions": [ "contextMenus", "tabs", "clipboardRead", "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.8.5",
+   "web_accessible_resources": [ "css/yformater.css" ]
+}

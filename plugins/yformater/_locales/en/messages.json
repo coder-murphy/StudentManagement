@@ -1,0 +1,182 @@
+{
+   "common_all_nothing": {
+      "description": "",
+      "message": "nothing..."
+   },
+   "file_app_cjson": {
+      "description": "",
+      "message": "Format from clipboard        Alt+V"
+   },
+   "file_app_copy": {
+      "description": "",
+      "message": "Copy to clipboard               Alt+C"
+   },
+   "file_app_font": {
+      "description": "",
+      "message": "Font size"
+   },
+   "file_app_json": {
+      "description": "",
+      "message": "Format current page           Alt+X"
+   },
+   "file_app_link": {
+      "description": "",
+      "message": "Visit selected link"
+   },
+   "file_app_lock": {
+      "description": "",
+      "message": "Lock"
+   },
+   "file_app_lock_cancel": {
+      "description": "",
+      "message": "Unlock"
+   },
+   "file_app_lock_domain": {
+      "description": "",
+      "message": "Lock current domain(?)"
+   },
+   "file_app_lock_url": {
+      "description": "",
+      "message": "Lock current pathname(=)"
+   },
+   "file_app_theme": {
+      "description": "",
+      "message": "Theme"
+   },
+   "file_content_collapse_all": {
+      "description": "",
+      "message": "Col all"
+   },
+   "file_content_copy_success": {
+      "description": "",
+      "message": "Copied!"
+   },
+   "file_content_expand_all": {
+      "description": "",
+      "message": "Exp all"
+   },
+   "file_content_expand_level1": {
+      "description": "",
+      "message": "Level 1"
+   },
+   "file_content_expand_level2": {
+      "description": "",
+      "message": "Level 2"
+   },
+   "file_content_expand_level3": {
+      "description": "",
+      "message": "Level 3"
+   },
+   "file_content_expand_level4": {
+      "description": "",
+      "message": "Level 4"
+   },
+   "file_content_expand_level5": {
+      "description": "",
+      "message": "Level 5"
+   },
+   "file_content_expand_level6": {
+      "description": "",
+      "message": "Level 6"
+   },
+   "file_content_expand_next": {
+      "description": "",
+      "message": "Next level"
+   },
+   "file_content_expand_prev": {
+      "description": "",
+      "message": "Prev level"
+   },
+   "file_content_parse_fail": {
+      "description": "",
+      "message": "Sorry, i can't parse this JSON string-.-"
+   },
+   "file_content_show_control": {
+      "description": "",
+      "message": "Collapse"
+   },
+   "file_content_title_collapse_all": {
+      "description": "",
+      "message": "Arrow keys up(↑)"
+   },
+   "file_content_title_expand_all": {
+      "description": "",
+      "message": "Arrow keys down(↓)"
+   },
+   "file_content_title_expand_level1": {
+      "description": "",
+      "message": "Numeral keys one(1)"
+   },
+   "file_content_title_expand_level2": {
+      "description": "",
+      "message": "Numeral keys two(2)"
+   },
+   "file_content_title_expand_level3": {
+      "description": "",
+      "message": "Numeral keys three(3)"
+   },
+   "file_content_title_expand_level4": {
+      "description": "",
+      "message": "Numeral keys four(4)"
+   },
+   "file_content_title_expand_level5": {
+      "description": "",
+      "message": "Numeral keys five(5)"
+   },
+   "file_content_title_expand_level6": {
+      "description": "",
+      "message": "Numeral keys six(6)"
+   },
+   "file_content_title_expand_next": {
+      "description": "",
+      "message": "Arrow keys right(→)"
+   },
+   "file_content_title_expand_prev": {
+      "description": "",
+      "message": "Arrow keys left(←)"
+   },
+   "file_manifest_default_title": {
+      "description": "",
+      "message": "yformater - The best JSON tool for chrome, she is smart, come and try it out!"
+   },
+   "file_manifest_description": {
+      "description": "",
+      "message": "The best JSON tool for chrome, she is smart, come and try it out!"
+   },
+   "file_options_keyboard_shortcut_des1": {
+      "description": "",
+      "message": "* You can cancel keyboard shortcut chrome to free,if the keyboard shortcut chrome 'yformater' disturb you with chrome."
+   },
+   "file_options_keyboard_shortcut_des2": {
+      "description": "",
+      "message": "* The Rule that the Regex is input of you to matching with the full path of carrent page.(window.location.href)"
+   },
+   "file_options_keyboard_shortcut_des3": {
+      "description": "",
+      "message": "* You can input some rules together,each line represents a rule,if any one or more rules matching success,then the 'yformater' will be inoperation command."
+   },
+   "file_options_keyboard_shortcut_des4": {
+      "description": "",
+      "message": "* So you'd better not input too many or too difficult rules."
+   },
+   "file_options_keyboard_shortcut_des5": {
+      "description": "",
+      "message": "* Warm Tips: Please remmber to click save when you update the rules."
+   },
+   "file_options_keyboard_shortcut_save_btn": {
+      "description": "",
+      "message": "Save"
+   },
+   "file_options_keyboard_shortcut_save_msg": {
+      "description": "",
+      "message": "saved!"
+   },
+   "file_options_keyboard_shortcut_title": {
+      "description": "",
+      "message": "「 Keyboard Shortcut Ignore Rules List 」"
+   },
+   "file_options_page_title": {
+      "description": "",
+      "message": "Yformater Settings"
+   }
+}
