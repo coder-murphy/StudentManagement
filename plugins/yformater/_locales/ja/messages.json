@@ -1,0 +1,182 @@
+{
+   "common_all_nothing": {
+      "description": "",
+      "message": "nothing..."
+   },
+   "file_app_cjson": {
+      "description": "",
+      "message": "クリップボードからJSONをフォーマットする        Alt+V"
+   },
+   "file_app_copy": {
+      "description": "",
+      "message": "フォーマットされたJSONをコピーする                  Alt+C"
+   },
+   "file_app_font": {
+      "description": "",
+      "message": "フォントサイズ"
+   },
+   "file_app_json": {
+      "description": "",
+      "message": "現在のページのJSONをフォーマットする               Alt+X"
+   },
+   "file_app_link": {
+      "description": "",
+      "message": "選択されたリンクにアクセスする"
+   },
+   "file_app_lock": {
+      "description": "",
+      "message": "ロックする"
+   },
+   "file_app_lock_cancel": {
+      "description": "",
+      "message": "アンロックする"
+   },
+   "file_app_lock_domain": {
+      "description": "",
+      "message": "現在のドメイン(?)をロックする"
+   },
+   "file_app_lock_url": {
+      "description": "",
+      "message": "現在のパス(=)をロックする"
+   },
+   "file_app_theme": {
+      "description": "",
+      "message": "テーマ"
+   },
+   "file_content_collapse_all": {
+      "description": "",
+      "message": "折り重なり"
+   },
+   "file_content_copy_success": {
+      "description": "",
+      "message": "JSONをクリップボードにコピーした"
+   },
+   "file_content_expand_all": {
+      "description": "",
+      "message": "広げ"
+   },
+   "file_content_expand_level1": {
+      "description": "",
+      "message": "レベル１"
+   },
+   "file_content_expand_level2": {
+      "description": "",
+      "message": "レベル２"
+   },
+   "file_content_expand_level3": {
+      "description": "",
+      "message": "レベル３"
+   },
+   "file_content_expand_level4": {
+      "description": "",
+      "message": "レベル４"
+   },
+   "file_content_expand_level5": {
+      "description": "",
+      "message": "レベル５"
+   },
+   "file_content_expand_level6": {
+      "description": "",
+      "message": "レベル６"
+   },
+   "file_content_expand_next": {
+      "description": "",
+      "message": "下級"
+   },
+   "file_content_expand_prev": {
+      "description": "",
+      "message": "上級"
+   },
+   "file_content_parse_fail": {
+      "description": "",
+      "message": "JSON解析が失敗する-.-"
+   },
+   "file_content_show_control": {
+      "description": "",
+      "message": "折り畳み"
+   },
+   "file_content_title_collapse_all": {
+      "description": "",
+      "message": "矢印キーの上(↑)"
+   },
+   "file_content_title_expand_all": {
+      "description": "",
+      "message": "矢印キーの下(↓)"
+   },
+   "file_content_title_expand_level1": {
+      "description": "",
+      "message": "数字キーの一(1)"
+   },
+   "file_content_title_expand_level2": {
+      "description": "",
+      "message": "数字キーの二(2)"
+   },
+   "file_content_title_expand_level3": {
+      "description": "",
+      "message": "数字キーの三(3)"
+   },
+   "file_content_title_expand_level4": {
+      "description": "",
+      "message": "数字キーの四(4)"
+   },
+   "file_content_title_expand_level5": {
+      "description": "",
+      "message": "数字キーの五(5)"
+   },
+   "file_content_title_expand_level6": {
+      "description": "",
+      "message": "数字キーの六(6)"
+   },
+   "file_content_title_expand_next": {
+      "description": "",
+      "message": "矢印キーの右(→)"
+   },
+   "file_content_title_expand_prev": {
+      "description": "",
+      "message": "矢印キーの左(←)"
+   },
+   "file_manifest_default_title": {
+      "description": "",
+      "message": "yformater - は歴史において一番真面目なJSONフォーマットプラグインであるかもしれません。クリーン、コンパクト、インテリジェントの長所を集め、信じなければ試してみてください。"
+   },
+   "file_manifest_description": {
+      "description": "",
+      "message": "これは歴史において一番真面目なJSONフォーマットプラグインであるかもしれません。クリーン、コンパクト、インテリジェントの長所を集め、信じなければ試してみてください。"
+   },
+   "file_options_keyboard_shortcut_des1": {
+      "description": "",
+      "message": "* ショートカットキーがchromeを正常に使用することに干渉する場合、ショートカットキーを自由に解除できる。"
+   },
+   "file_options_keyboard_shortcut_des2": {
+      "description": "",
+      "message": "* ルールとは、入力された正規表現を現在のページのフルパス(window.location.href)とマッチングすることです。"
+   },
+   "file_options_keyboard_shortcut_des3": {
+      "description": "",
+      "message": "* 複数のルールを入力でき、各行は１つのルールを示し、任意の１つまたは複数のルールはマッチングが成功すると、yformaterショートカットキーが失効します。"
+   },
+   "file_options_keyboard_shortcut_des4": {
+      "description": "",
+      "message": "* 従って、多すぎるルールを入力することを勧めなく、複雑すぎるルールを入力することも勧めません。"
+   },
+   "file_options_keyboard_shortcut_des5": {
+      "description": "",
+      "message": "* ルールを更新する度に、ぜひ記憶しますよ！"
+   },
+   "file_options_keyboard_shortcut_save_btn": {
+      "description": "",
+      "message": "記憶します"
+   },
+   "file_options_keyboard_shortcut_save_msg": {
+      "description": "",
+      "message": "記憶が成功します！"
+   },
+   "file_options_keyboard_shortcut_title": {
+      "description": "",
+      "message": "「 ショートカットキーのブロックルールリスト 」"
+   },
+   "file_options_page_title": {
+      "description": "",
+      "message": "yformaterオプション"
+   }
+}
