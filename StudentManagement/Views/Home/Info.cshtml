@@ -1,5 +1,7 @@
 ﻿@model StudentManagement.Models.StudentInfoViewModel
-
+@{
+    string iconPath = $"~/images/" + (Model.Student.Icon ?? "defuser.jpg");
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +16,7 @@
         <div class="card-header">
             <div class="card-title">@Model.Name</div>
         </div>
-        <img class="card-img-top" src="~/imgs/usersmall.jpg" width="200" height="200" asp-append-version="true"/>
+        <img class="card-img-top" src="@iconPath" width="200" height="200" asp-append-version="true"/>
         <div class="card-body text-center">
             <h5 class="card-title">主修科目：@Model.Major.Value.ToString()</h5>
         </div>

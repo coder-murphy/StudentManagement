@@ -27,5 +27,7 @@ namespace StudentManagement.Models
 
 
         public IFormFile Icon { get; set; }
+
+        public Student Student { get; set; }
     }
 }

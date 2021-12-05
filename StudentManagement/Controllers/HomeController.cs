@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using StudentManagement.Models;
 using StudentManagement.Models.Interface;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -15,13 +17,10 @@ namespace StudentManagement.Controllers
     [Route("home")]
     public class HomeController : Controller
     {
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-        public HomeController(IStudentRepository studentRepo)
+        public HomeController(IWebHostEnvironment webHostEnvironment,IStudentRepository studentRepo)
         {
             studentRepository = studentRepo;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         private readonly IStudentRepository studentRepository;
@@ -47,7 +46,8 @@ namespace StudentManagement.Controllers
                 Id = model.Id,
                 Name = model.Name,
                 Email = model.Email,
-                Major = model.Major
+                Major = model.Major,
+                Student = model
             };
             ViewData["Title"] = "查询到的学生信息";
             return View(studentInfoViewModel);
@@ -67,14 +67,33 @@ namespace StudentManagement.Controllers
         /// <summary>
         /// 新建学生
         /// </summary>
-        /// <param name="student"></param>
+        /// <param name="model"></param>
         /// <returns></returns>
         [Route("create")]
         [HttpPost]
-        public RedirectToActionResult CreateNew(Student student)
+        public IActionResult CreateNew(StudentInfoViewModel model)
         {
-            Student s = studentRepository.AddStudent(student);
-            return RedirectToAction("create", new { id = s.Id });
+            if(ModelState.IsValid)
+            {
+                string uName = null;
+                if(model.Icon != null)
+                {
+                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+                    uName = Guid.NewGuid().ToString() + "_" + model.Icon.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uName);
+                    model.Icon.CopyTo(new FileStream(filePath, FileMode.Create));
+                }
+                Student student = new Student
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Major = model.Major,
+                    Icon = uName
+                }; 
+                studentRepository.AddStudent(student);
+                return RedirectToAction("info", new { id = student.Id });
+            }
+            return View();
         }
 
         [Route("allinfos")]
@@ -84,5 +103,7 @@ namespace StudentManagement.Controllers
             ViewData["PageTitle"] = "Student Details";
             return View(model);
         }
+
+        private IWebHostEnvironment _webHostEnvironment;
     }
 }
