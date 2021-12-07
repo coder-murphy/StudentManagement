@@ -29,10 +29,11 @@ namespace StudentManagement.Controllers
         /// 主页面
         /// </summary>
         /// <returns></returns>
-        public string Index()
+        public ViewResult Index()
         {
             //return studentRepository.GetStudent(1).Name;
-            return "Home Page";
+            ImageCollectionViewModel imageCollectionViewModel = new ImageCollectionViewModel();
+            return View(imageCollectionViewModel);
         }
 
         // 属性路由
@@ -94,6 +95,25 @@ namespace StudentManagement.Controllers
                 return RedirectToAction("info", new { id = student.Id });
             }
             return View();
+        }
+
+        /// <summary>
+        /// 编辑
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public ViewResult Edit(int id)
+        {
+            Student student = studentRepository.GetStudent(id);
+            StudentEditViewModel studentEditViewModel = new StudentEditViewModel
+            {
+                Id = student.Id,
+                Name = student.Name,
+                Email = student.Email,
+                Major = student.Major,
+                ExistingIconPath = student.Icon
+            };
+            return View(studentEditViewModel);
         }
 
         [Route("allinfos")]

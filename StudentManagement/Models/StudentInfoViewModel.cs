@@ -25,7 +25,7 @@ namespace StudentManagement.Models
         [Required(ErrorMessage = "请选择一个科目!")]
         public MajorEnum? Major { get; set; }
 
-
+        [Display(Name="头像")]
         public IFormFile Icon { get; set; }
 
         public Student Student { get; set; }
