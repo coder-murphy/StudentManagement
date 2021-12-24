@@ -9,8 +9,8 @@
     </div>
     @section Scripts{
     <script>
-        $(document).ready(() => {
-            $(".custom-file-input").on("change",() => {
+        $(document).ready(function() {
+            $(".custom-file-input").on("change",function() {
                 var fileLabel = $(this).next(".custom-file-label");
                 var files = $(this)[0].files;
                 if(files.length > 1)
