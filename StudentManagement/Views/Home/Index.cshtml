@@ -1,0 +1,27 @@
+﻿@model ImageCollectionViewModel
+<form enctype="multipart/form-data" asp-controller="home" asp-action="create" method="post" class="mt-3">
+    <div class="form-group row">
+        <label asp-for="Images" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Images" multiple class="form-control custom-file-input" />
+            <label class="custom-file-label">请选择图片....</label>
+        </div>
+    </div>
+    @section Scripts{
+    <script>
+        $(document).ready(function() {
+            $(".custom-file-input").on("change",function() {
+                var fileLabel = $(this).next(".custom-file-label");
+                var files = $(this)[0].files;
+                if(files.length > 1)
+                {
+                    fileLabel.html("读者已经选择了：" + files.length + "个文件");
+                }
+                else if(files.length == 1){
+                    fileLabel.html(files[0].name);
+                }
+            });
+        });
+    </script>
+    }
+</form>

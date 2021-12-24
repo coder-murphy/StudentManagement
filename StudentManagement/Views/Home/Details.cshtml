@@ -15,17 +15,18 @@
     <div class="card-group">
         @foreach (var i in Model)
         {
+            string iconPath = $"~/images/" + (i.Icon ?? "defuser.jpg");
             <div class="card m-3">
                 <div class="card-header">
                     <h3 class="card-title">@i.Name</h3>
                 </div>
-                <img class="card-img-top" src="~/imgs/usersmall.jpg" width="200" height="200" asp-append-version="true"/>
+                <img class="card-img-top" src="@iconPath" width="200" height="200" asp-append-version="true"/>
                 <div class="card-body text-center">
                     <h5 class="card-title">主修科目：@i.Major</h5>
                 </div>
                 <div class="card-footer text-center">
                     <a href="/home/info/@i.Id" class="btn btn-primary m-1">查看</a>
-                    <a href="#" class="btn btn-primary m-1">编辑</a>
+                    <a href="/home/edit/@i.Id" class="btn btn-primary m-1">编辑</a>
                     <a href="#" class="btn btn-danger m-1">删除</a>
                 </div>
             </div>
