@@ -41,6 +41,11 @@ namespace StudentManagement.Controllers
         public ViewResult Info(int id)
         {
             var model = studentRepository.GetStudent(id);
+            if(model == null)
+            {
+                Response.StatusCode = 404;
+                return View("StudentNotFound", id);
+            }
             StudentInfoViewModel studentInfoViewModel = new StudentInfoViewModel
             {
                 PageTitle = "查询到的学生信息",
@@ -102,9 +107,11 @@ namespace StudentManagement.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [Route("edit")]
+        [HttpGet]
+        [Route("edit/{id}")]
         public ViewResult Edit(int id)
         {
+            Console.WriteLine("进入编辑重定向");
             Student student = studentRepository.GetStudent(id);
             StudentEditViewModel studentEditViewModel = new StudentEditViewModel
             {
@@ -123,15 +130,17 @@ namespace StudentManagement.Controllers
         /// <param name="studentEditViewModel"></param>
         /// <returns></returns>
         [HttpPost]
+        [Route("edit/{id}")]
         public IActionResult Edit(StudentEditViewModel studentEditViewModel)
         {
-            if(ModelState .IsValid)
+            Console.WriteLine("进入post编辑");
+            if(ModelState.IsValid)
             {
                 Student student = studentRepository.GetStudent(studentEditViewModel.Id);
-                studentEditViewModel.Name = student.Name;
-                studentEditViewModel.Email = student.Email;
-                studentEditViewModel.Major = student.Major;
-                if(studentEditViewModel.Icon != null)
+                student.Name = studentEditViewModel.Name;
+                student.Email = studentEditViewModel.Email;
+                student.Major = studentEditViewModel.Major;
+                if (studentEditViewModel.Icon != null)
                 {
                     if(studentEditViewModel.ExistingIconPath != null)
                     {
@@ -141,7 +150,8 @@ namespace StudentManagement.Controllers
                     student.Icon = ProcessUploadedFile(studentEditViewModel);
                 }
                 Student updated = studentRepository.SaveStudent(student);
-                return RedirectToAction("index");
+                Console.WriteLine($"重新编辑学生信息{student.Name}");
+                return RedirectToAction("allinfos");
             }
             return View(studentEditViewModel);
         }
